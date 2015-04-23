@@ -1,0 +1,17 @@
+pus {1}
+not {0}
+
+pus {i, 1}
+pus {i, 1, 13}
+in  {i, 1, 13, n}
+sub {i, 1, 13-n}
+not {i, 1, m}  // mは、nが'\n'なら1、それ以外なら0
+gre {i, p}  // pは、nが'\n'なら0、それ以外なら1
+// pointerやswitchで上手く分岐。switchが有力？
+(if eq? p 0)
+out {}
+end
+(else)
+pus {i, 1}
+add {i+1}
+loop
