@@ -1,0 +1,25 @@
+pus {1}
+inp {1, n}
+
+# loop
+dup {1, n, n}
+pus {1, n, n, 1}
+gre {1, n, m}  # n > 1 ‚Ì‚Í m = 1, ‚»‚êˆÈŠO‚Í m = 0
+swi {1, n}
+
+# n > 1 ‚Ì 
+dup {1, n, n}
+pus {1, n, n, 3}
+pus {1, n, n, 3, 1}
+rol {n, 1, n}
+mul {n, 1*n}
+pus {n, 1*n, 2}
+pus {n, 1*n, 2, 1}
+rol {1*n, n}
+pus {1*n, n, 1}
+sub {1*n, n-1}
+
+# n <= 1 ‚Ì
+pop {f}
+out {}
+end
