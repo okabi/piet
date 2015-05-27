@@ -6,6 +6,11 @@ W2H4
 
 This program adds 2 input values and outputs it.
 
+## euclidean
+W6H6
+
+This program outputs g.c.d. of 2 input values.
+
 ## factorial
 W7H7
 

@@ -1,0 +1,21 @@
+in(n) {m}
+in(n) {m, n}
+#loop
+dup {m, n, n}
+not {m, n, 0 or 1}
+switch or point {m, n}
+
+# n ‚ª 0 ‚È‚ç m ‚ğo—Í‚µ‚ÄI—¹
+pop
+out(n)
+end
+
+# ‚»‚êˆÈŠO
+# newn = m % n
+# newm = n
+dup {m, n, n}
+pus {m, n, n, 3}
+pus {m, n, n, 3, 1}
+rol {n, m, n}
+mod {n, m%n}
+# to loop
